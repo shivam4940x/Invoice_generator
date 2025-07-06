@@ -33,7 +33,7 @@ const Login = () => {
           </button>
 
           <div className="center gap-2">
-            continue without saving progress? <Link to="/"> Sure</Link>
+            <Link to="/">continue without saving</Link>
           </div>
         </div>
       </div>
