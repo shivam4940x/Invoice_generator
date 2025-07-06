@@ -1,0 +1,51 @@
+body {
+  background-color: var(--color-background);
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Poppins", sans-serif;
+  color: var(--color-forground);
+}
+
+@media print {
+  body * {
+    visibility: hidden;
+  }
+
+  #preview,
+  #preview * {
+    visibility: visible;
+  }
+
+  #preview {
+    position: absolute;
+    background-color: var(--color-background);
+    color: white;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    max-height: none;
+    overflow: visible;
+  }
+}
+/* Chrome, Safari, Edge, Opera */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  appearance: none;
+  -webkit-appearance: none; /* Safari/Chrome */
+  -moz-appearance: textfield; /* Firefox */
+  margin: 0;
+}

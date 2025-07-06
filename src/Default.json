@@ -1,0 +1,53 @@
+{
+  "DefaultValues": {
+    "from": {
+      "name": "Sender Name",
+      "mobile": "+91 0000000000",
+      "email": "sender@example.com",
+      "payAt": "paypal.me/username"
+    },
+    "paymentMethod": "Bank Transfer",
+    "to": {
+      "name": "Client Name",
+      "billingAddress": "456, Example Street, City, Country",
+      "email": "client@example.com",
+      "mobile": "+91 1111111111"
+    },
+    "currency": "INR",
+    "invoice": {
+      "id": "INV-YYYYMMDD-001",
+      "date": "2025-07-05"
+    },
+    "due": "2025-07-20",
+    "deliveryExpected": "2025-07-10",
+    "items": [
+      {
+        "description": "Service Description",
+        "quantity": "1",
+        "price": "40000",
+        "tax": "7200",
+        "total": "47200"
+      }
+    ],
+    "tax": "18",
+    "amount": {
+      "subtotal": 40000,
+      "total": 47200,
+      "discount": 0,
+      "paid": 20000,
+      "pending": 27200
+    },
+    "BankTransfer": {
+      "IFSC": "HDFC0001234",
+      "number": "012345678901"
+    },
+    "totalTax": 7200,
+    "terms": "Payment due within 15 days.",
+    "createdAt": "2025-07-05T00:00:00.000Z",
+    "poNumber": 123456,
+    "status": "pending",
+    "notes": "Thank you for your business.",
+    "note": "Delivery expected before the due date."
+  },
+  "prefix": "DEV-"
+}
